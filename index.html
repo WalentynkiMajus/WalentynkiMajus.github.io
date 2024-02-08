@@ -13,6 +13,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-color: pink;
+    
     }
     #question {
         margin-top: 200px;
@@ -88,10 +89,6 @@
     <button id="noBtn" class="btn2" onmouseenter="moveNoButton()">Nie</button>
 </div>
 <img id="dogGif" src="./smiling-dog-1.gif" alt="Happy Dog GIF">
-<img class="decoration flower1" src="./1295049_print-trimmed-1.png" alt="Pink Flower">
-<img class="decoration flower2" src="./image_processing20200410-24721-1vcbanp.png" alt="Pink Flower">
-<img class="decoration dog" src="./pngtree-love-beautiful-white-rose-png-image_6281481.jpg" alt="Happy Dog">
-<img class="decoration cat" src="./cb6777e04ef147add461283e9da16395.jpg" alt="Cute Cat">
 <script>
 function answer(response) {
     if (response === 'tak') {
@@ -107,8 +104,8 @@ function showDogGif() {
 
 function moveNoButton() {
     var button = document.getElementById('noBtn');
-    var x = Math.floor(Math.random() * window.innerWidth);
-    var y = Math.floor(Math.random() * window.innerHeight);
+    var x = Math.floor(Math.random() * 700);
+    var y = Math.floor(Math.random() * 700);
     button.style.transition = 'transform 0.5s ease';
     button.style.transform = 'translate(' + x + 'px,' + y + 'px)';
 }
