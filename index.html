@@ -18,7 +18,7 @@
     }
     #question {
         margin-top: 200px;
-        font-size: 42px;
+        font-size: 32px;
         cursor: pointer;
         font-weight: bold;
         color: white;
@@ -55,8 +55,8 @@
     #dogGif {
         display: none;
         margin-top: 20px;
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 200px;
+        max-height: 200px;
     }
     .decoration {
         position: absolute;
@@ -123,11 +123,12 @@ function showDogGif() {
 
 function moveNoButton() {
     var button = document.getElementById('noBtn');
-    var x = Math.floor(Math.random() * 600);
-    var y = Math.floor(Math.random() * 600);
+    var x = Math.floor(Math.random() * 450);
+    var y = Math.floor(Math.random() * 450);
     button.style.transition = 'transform 0.5s ease';
     button.style.transform = 'translate(' + x + 'px,' + y + 'px)';
 }
 </script>
 </body>
 </html>
+
